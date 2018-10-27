@@ -1,2 +1,2 @@
 # QRdemo
-this is a demo for generate QR code.
+this is a java demo for showing how to generate QR code.
