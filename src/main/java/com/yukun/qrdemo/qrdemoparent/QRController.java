@@ -32,6 +32,8 @@ public class QRController {
         response.setContentType("image/jpeg");
 
         image = QRCodeUtil.createImage(content);
+        InputStream inputStream = this.getClass().getResourceAsStream("/static/avatar.jpg");
+        QRCodeUtil.insertImage(image,inputStream,Boolean.TRUE);
         // 创建二进制的输出流
         try(ServletOutputStream sos = response.getOutputStream()){
             // 将图像输出到Servlet输出流中。
